@@ -1,6 +1,9 @@
+/* all */
 body {
 	font-family: "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;
 	font-size: 16px;
+	line-height: 1.7;
+	letter-spacing: 0.05em;
 }
 
 h1,h2 {
@@ -13,9 +16,171 @@ h1,h2 {
 }
 
 h1 {
-	font-size: 4.5rem;
+	font-size: 3.5rem;
+	padding: 50px 0;
+	text-align: center;
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px;
+}
+
+.btn {
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 3px 40px;
+	margin-top: 20px;
+	position: relative;
+}
+
+.btn::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 15px;
+	right: 12px;
+	border-style: solid;
+	border-width: 10px 0 10px 13px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.btn_more {
+	border-radius: 35px;
+}
+
+/* ---------- TOP PAGE ---------- */
+/* header */
+nav {
+	padding-bottom: 30px;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	padding: 0 30px;
+	color: #555;
+	cursor: pointer;
+	display: block;
+	position: relative;
+}
+
+nav li a::before {
+	content: '';
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	transition: all 0.3s ease;
+	border-bottom: 3px solid #555;
+	position: absolute;
+	display: block;
+}
+
+nav li a:hover::before {
+	width: 50%;
+	border-bottom: 3px solid #555;
+}
+
+nav li a::after {
+	content: '';
+	width: 0;
+	right: 50%;
+	bottom: 0;
+	transition: all 0.3s ease;
+	border-bottom: 3px solid #555;
+	position: absolute;
+	display: block;
+}
+
+nav li a:hover::after {
+	width: 50%;
+	border-bottom: 3px solid #555;
+}
+
+/* top */
+.top {
+	padding: 50px 0;
+}
+
+.top_texts p {
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	padding: 0 60px;
+	font-size: 17px;
+}
+
+/* about */
+.top_about {
+	background: #f2f2f2;
+	padding: 50px 0;
+}
+
+.top_about_img img {
+	max-width: 220px;
+	height: auto;
+}
+
+.top_about_texts {
+	max-width: 550px;
+}
+
+/* works */
+.top_works {
+	padding: 50px 0;
+	text-align: center;
+}
+
+.top_works_items.flex {
+	padding: 30px 0;
+}
+
+.top_works_items img {
+	max-width: 300px;
+}
+
+/* contact */
+.top_contact {
+	background: #f2f2f2;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.top_contact p {
+	padding: 20px 0;
+}
+
+/* footer */
+footer {
+	background: #535353;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.sns_icons img  {
+	padding: 0 20px;
+}
+
+.sns_icons.flex {
+	justify-content: center;
+}
+
+footer p {
+	color: #fff;
+	font-size: 10px;
+	padding-top: 20px;
 }
