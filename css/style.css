@@ -1,0 +1,21 @@
+body {
+	font-family: "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;
+	font-size: 16px;
+}
+
+h1,h2 {
+	font-family: 'Gloria Hallelujah', cursive;
+	/* font-family: 'Kalam', cursive; */
+	/* font-family: 'Patrick Hand', cursive; */
+	/* font-family: 'Caveat', cursive; */
+	/* font-family: 'Indie Flower', cursive; */
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 4.5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
