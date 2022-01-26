@@ -1,3 +1,44 @@
-@media screen and (min-width:768px) and ( max-width:1024px) {
-	
+@media screen and (max-width: 959px) {
+	/* all */
+	body {
+		font-size: 14px;
+	}
+
+	.container {
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 0 30px;
+	}
+
+	/* top */
+.top_texts p {
+	padding: 0 30px;
+	font-size: 16px;
+}
+
+.top_imges {
+	height: auto;
+}
+
+.top_imges img {
+	max-width: 320px;
+	min-width: 130px;
+	right: 50%;
+}
+
+/* about */
+.top_about_img img {
+	max-width: 150px;
+	min-width: 100px;
+}
+
+.top_about_texts {
+	max-width: 350px;
+}
+
+/* works */
+.mask {
+	display: none;
+}
+
 }
