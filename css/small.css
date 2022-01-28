@@ -85,6 +85,11 @@ h2 {
 		display: block;
 	}
 	
+	.flex_sp {
+		display: flex;
+		justify-content: space-between;
+	}
+
 	.table_cell {
 		display: block;
 	}
@@ -106,9 +111,9 @@ h2 {
 	}
 
 	/* header */
-nav li a {
-	padding: 0 10px;
-}
+	nav li {
+		padding: 0;
+	}
 
 	/* top */
 .top_texts p {
@@ -132,6 +137,21 @@ nav li a {
 .top_about_texts {
 	max-width: 460px;
 	padding-top: 120px;
+}
+
+/* footer */
+.sns_btns {
+	padding-top: 0px;
+}
+
+.sns_btn {
+	padding: 15px 15px 0 15px;
+	border-radius: 25px;
+	font-size: 10px;
+}
+
+.sns_icons img,.sns_btn  {
+	margin: 5px;
 }
 
 }
