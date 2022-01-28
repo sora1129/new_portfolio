@@ -25,11 +25,11 @@ h1 {
 
 /* header */
 header {
-	height: 150px;
+	height: 180px;
 }
 
 .header {
-	height: 150px;
+	height: 180px;
 }
 
 /* top */
@@ -117,14 +117,6 @@ header {
 	}
 
 	/* header */
-	header {
-		height: 130px;
-	}
-
-	.header {
-		height: 130px;
-	}
-
 	nav li {
 		padding: 0;
 	}
