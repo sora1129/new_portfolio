@@ -4,14 +4,6 @@ body {
 	font-size: 14px;
 }
 
-h1 {
-	font-size: 3rem;
-}
-
-h2 {
-	font-size: 2rem;
-}
-
 .br_sp {
 	display: block;
 }
@@ -24,6 +16,20 @@ h2 {
 .flex_wrap {
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+h1 {
+	font-size: 2.5rem;
+	padding: 20px 0;
+}
+
+/* header */
+header {
+	height: 150px;
+}
+
+.header {
+	height: 150px;
 }
 
 /* top */
@@ -111,6 +117,14 @@ h2 {
 	}
 
 	/* header */
+	header {
+		height: 130px;
+	}
+
+	.header {
+		height: 130px;
+	}
+
 	nav li {
 		padding: 0;
 	}
