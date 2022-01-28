@@ -7,7 +7,6 @@ body {
 }
 
 h1,h2 {
-	/* font-family: 'Gloria Hallelujah', cursive; */
 	font-family: 'Caveat', cursive;
 	font-weight: bold;
 }
@@ -40,10 +39,11 @@ h2 {
 
 .btn {
 	display: inline-block;
-	background: #000;
+	background: #333;
+	border: 1px solid #333;
 	color: #fff;
 	font-size: 1.5rem;
-	padding: 3px 40px;
+	padding: 2px 40px 5px;
 	margin-top: 20px;
 	position: relative;
 }
@@ -53,7 +53,7 @@ h2 {
 	width: 0;
 	height: 0;
 	position: absolute;
-	top: 15px;
+	top: 13px;
 	right: 12px;
 	border-style: solid;
 	border-width: 10px 0 10px 13px;
@@ -64,6 +64,19 @@ h2 {
 	border-radius: 35px;
 }
 
+/* btn hover */
+.btn:hover {
+	background-color: #fff;
+	border: 1px solid #555;
+	color: #555;
+	transition: all .5s;
+}
+
+.btn:hover::after {
+	border-color: transparent transparent transparent #555;
+	transition: all .5s;
+}
+
 /* ---------- TOP PAGE ---------- */
 /* header */
 nav {
@@ -72,20 +85,18 @@ nav {
 
 nav li {
 	display: inline-block;
+	padding: 0 30px;
 }
 
 nav li a {
-	padding: 0 30px;
+	padding: 0 10px;
 	color: #555;
 	cursor: pointer;
 	display: block;
-}
-
-.active {
 	position: relative;
 }
 
-.active::before {
+nav li a::before {
 	content: '';
 	width: 0;
 	left: 50%;
@@ -96,12 +107,12 @@ nav li a {
 	display: block;
 }
 
-.active:hover::before {
+nav li a:hover::before {
 	width: 50%;
 	border-bottom: 3px solid #555;
 }
 
-.active::after {
+nav li a::after {
 	content: '';
 	width: 0;
 	right: 50%;
@@ -112,7 +123,7 @@ nav li a {
 	display: block;
 }
 
-.active:hover::after {
+nav li a:hover::after {
 	width: 50%;
 	border-bottom: 3px solid #555;
 }
@@ -164,7 +175,7 @@ nav li a {
 	opacity: 0;
 }
 
-.top_about_img img.active {
+.top_about_img img.stream {
 	opacity: 1;
 }
 
@@ -181,7 +192,7 @@ nav li a {
 .top_works_items img {
 	max-width: 250px;
 	min-width: 180px;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 
 .top_works_items img {
@@ -192,10 +203,11 @@ nav li a {
 	position: relative;
 }
 
+/* works animetion */
 .animate {
 	opacity: 0;
 	transform: translateY(40px);
-	transition: opacity 0.3s, transform 0.3s;
+	transition: opacity .8s, transform .8s;
 }
 
 .animate.appear {
@@ -203,6 +215,15 @@ nav li a {
 	transform: none;
 }
 
+.animate.delay {
+	transition-delay: .3s;
+}
+
+.animate.delay_more {
+	transition-delay: .8s;
+}
+
+/* works hover */
 .mask {
 	width: 90%;
 	height: 68%;
@@ -213,10 +234,10 @@ nav li a {
 	background-color: rgba(0,0,0,0.5);
 	-webkit-transition: all 0.6s ease;
 	transition: all 0.6s ease;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: bold;
 	text-align: center;
-	line-height: 6;
+	line-height: 5.5;
 	color: #fff;
 }
 
@@ -248,6 +269,11 @@ footer {
 
 .sns_icons.flex {
 	justify-content: center;
+}
+
+.sns_icons a:hover {
+	opacity: 0.5;
+	transition: opacity .5s;
 }
 
 footer p {

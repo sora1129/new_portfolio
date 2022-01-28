@@ -7,8 +7,19 @@
 	.container {
 		max-width: 600px;
 		margin: 0 auto;
-		padding: 0 30px;
+		padding: 0 20px;
 	}
+
+	/* btn hover */
+.btn:hover {
+	background: #333;
+	border: 1px solid #333;
+	color: #fff;
+}
+
+.btn:hover::after {
+	border-color: transparent transparent transparent #fff;
+}
 
 	/* top */
 .top_texts p {

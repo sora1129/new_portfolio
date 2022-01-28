@@ -10,36 +10,37 @@
 			}
 			imagesTop[currentIndex].classList.add('current');
 			playTop();
-		}, 1300);
+		}, 1100);
 	}
 
 	function playAbout() {
 			setTimeout(() => {
-			imagesAbout[activeIndex].classList.remove('active');
-			activeIndex++;
-			if (activeIndex > imagesAbout.length - 1) {
-				activeIndex = 0;
+			imagesAbout[streamIndex].classList.remove('stream');
+			streamIndex++;
+			if (streamIndex > imagesAbout.length - 1) {
+				streamIndex = 0;
 			}
-			imagesAbout[activeIndex].classList.add('active');
+			imagesAbout[streamIndex].classList.add('stream');
 			playAbout();
-		}, 1300);
+		}, 1100);
 	}
 
 	const imagesTop = document.querySelectorAll('.top_imges img');
 	const imagesAbout = document.querySelectorAll('.top_about_img img');
 	let currentIndex = 0;
-	let activeIndex = 0;
+	let streamIndex = 0;
 
 	playTop();
 	playAbout();
 
-	function calback(entries) {
+	function calback(entries, obs) {
 		entries.forEach(entry => {
-			if (!entry.isInterescting) {
+			if (!entry.isIntersecting) {
 				return;
 			}
 
 			entry.target.classList.add('appear');
+			obs.unobserve(entry.target);
 		});
 	}
 

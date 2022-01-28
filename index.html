@@ -11,18 +11,18 @@
 	<link rel="stylesheet" type="text/css" href="css/small.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<div class="container">
 			<h1>Sora Ninomiya Portfolio</h1>
 			<nav>
-				<ul class="flex">
-					<li class="active"><a href="#">TOP</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="works.html">WORKS</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
+				<ul class="flex navbar">
+					<li><a href="#">TOP</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#works">WORKS</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -40,21 +40,21 @@
 		</div>
 	</div>
 
-	<div class="top_about">
+	<div class="top_about" id="about">
 		<div class="container flex">
 			<div class="top_about_img">
-				<img src="images/top_about_pengin01.png" alt="ペンギンのキャラクター" class="active">
+				<img src="images/top_about_pengin01.png" alt="ペンギンのキャラクター" class="stream">
 				<img src="images/top_about_pengin02.png" alt="名刺を持ったペンギンのキャラクター">
 			</div>
 			<div class="top_about_texts">
 				<h2>About</h2>
 				<p>はじめまして、にのみや そらです。<br>ポートフォリオをご覧いただき、ありがとうございます。<br>Webサイト制作を中心に、フロントエンジニアとして活動しています。<br><br>戦略、マーケティング思考に基づいた制作だけでなく、クライアントとユーザーに寄り添って制作することを心掛けています。</p>
-				<a href="#about" class="btn btn_more">View More</a>
+				<!-- <a href="#about" class="btn btn_more">View More</a> -->
 			</div>
 		</div>
 	</div>
 
-	<div class="top_works">
+	<div class="top_works" id="works">
 		<div class="container">
 			<h2>Works</h2>
 			<div class="top_works_items flex flex_wrap">
@@ -64,28 +64,30 @@
 						<p>LP制作</p>
 					</div>
 				</a>
-				<a href="#" class="animate">
+				<a href="#" class="animate delay">
 					<img src="images/top_works_hp.png" alt="制作したホームページの画像">
 					<div class="mask">
 						<p>HP制作</p>
 					</div>
 				</a>
-				<a href="#" class="animate">
+				<a href="#" class="animate delay_more">
 					<img src="images/top_works_write.png" alt="作成した記事が掲載されているWbeページの画像">
 					<div class="mask">
 						<p>Webライティング</p>
 					</div>
 				</a>
 			</div>
-				<a href="#about" class="btn btn_more">View More</a>
+			<a href="" class="guihub">Github</a>
+				<!-- <a href="#about" class="btn btn_more">View More</a> -->
 		</div>
 	</div>
 
-	<div class="top_contact">
+	<div class="top_contact" id="contact">
 		<div class="container">
 			<h2>Contact</h2>
-			<p>お仕事のご相談・ご質問などは下記のContactページより<br class="br_sp">お問い合わせください。</p>
-				<a href="#contact" class="btn btn_more">Contact Form</a>
+			<!-- <p>お仕事のご相談・ご質問などは下記のContactページより<br class="br_sp">お問い合わせください。</p> -->
+			<p>お仕事のご相談・ご質問などは下記より<br class="br_sp">お問い合わせください。</p>
+				<!-- <a href="#contact" class="btn btn_more">Contact Form</a> -->
 		</div>
 	</div>
 
