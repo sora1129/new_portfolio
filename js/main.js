@@ -1,6 +1,9 @@
 'use strict'
 
 {
+	/*------- 
+	 ALL PAGE
+	---------*/
 	//---------- スムーススクロール-------------//
 	// #で始まるリンクを取得
 	const smoothScroll = document.querySelectorAll('a[href^="#"]');
@@ -87,6 +90,20 @@
 
 	document.querySelectorAll('.animate').forEach(el => {
 		observer.observe(el);
+	});
+
+	/*------- 
+	 WORKS PAGE
+	---------*/
+	//---------- tab menu-------------//
+	const tabMenu = document.querySelectorAll('.tab_menu li a');
+
+	tabMenu.forEach(item =>  {
+		item.addEventListener('click', e => {
+			e.preventDefault();
+
+			item.classList.add(tab_on);
+		});
 	});
 
 }
