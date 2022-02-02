@@ -341,14 +341,18 @@ footer p {
 
 .works_items ul li a img {
 	max-width: 280px;
+	min-width: 130px;
 	padding: 20px 10px;
+}
+
+.works_items.show {
+	display: block;
 }
 
 .works_items {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	text-align: center;
 	display: none;
 }
-

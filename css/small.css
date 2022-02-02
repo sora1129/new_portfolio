@@ -62,6 +62,13 @@ header {
 	display: none;
 }
 
+/* ---------- WORKS PAGE ---------- */
+.works_items ul li a img {
+	max-width: 220px;
+	min-width: 130px;
+	padding: 20px 10px;
+}
+
 }
 
 @media screen and (max-width:479px) {
@@ -158,6 +165,25 @@ header {
 
 .sns_icons img,.sns_btn  {
 	margin: 5px;
+}
+
+/* ---------- WORKS PAGE ---------- */
+.works_tab {
+	padding: 30px 0;
+}
+
+.tab_menu {
+	max-width: 250px;
+}
+
+.tab_menu li a {
+	padding: 8px 15px;
+	font-size: 12px;
+}
+
+.works_items ul li a img {
+	max-width: 145px;
+	padding: 10px 5px;
 }
 
 }

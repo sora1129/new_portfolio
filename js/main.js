@@ -97,12 +97,21 @@
 	---------*/
 	//---------- tab menu-------------//
 	const tabMenu = document.querySelectorAll('.tab_menu li a');
+	const items = document.querySelectorAll('.works_items');
 
-	tabMenu.forEach(item =>  {
-		item.addEventListener('click', e => {
+	tabMenu.forEach(clickeditem =>  {
+		clickeditem.addEventListener('click', e => {
 			e.preventDefault();
 
-			item.classList.add(tab_on);
+			tabMenu.forEach(item => {
+				item.classList.remove('tab_on');
+			});
+			clickeditem.classList.add('tab_on');
+
+			items.forEach(worksItems => {
+				worksItems.classList.remove('show');
+			});
+			document.getElementById(clickeditem.dataset.id).classList.add('show');
 		});
 	});
 
