@@ -57,4 +57,11 @@
 	padding-top: 13px;
 }
 
+/* ---------- WORKS PAGE ---------- */
+.works_items ul li a img {
+	max-width: 180px;
+	min-width: 130px;
+	padding: 20px 10px;
+}
+
 }
