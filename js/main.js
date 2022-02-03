@@ -21,8 +21,10 @@
 				const rect = target.getBoundingClientRect().top;
 				// window.scrollY
 				const offset = window.pageYOffset;
+				// 固定ヘッダー分の高さ
+				const header = 200;
 				// 移動先のポジション取得
-				const position = rect + offset;
+				const position = rect + offset -header;
 				// window.scrollToでスクロール
 				window.scrollTo({
 					top: position,
@@ -91,6 +93,12 @@
 	document.querySelectorAll('.animate').forEach(el => {
 		observer.observe(el);
 	});
+
+
+	/*------- 
+	 ABOUT PAGE
+	---------*/
+
 
 	/*------- 
 	 WORKS PAGE

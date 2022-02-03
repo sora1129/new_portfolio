@@ -4,6 +4,13 @@ body {
 	font-size: 16px;
 	line-height: 1.6;
 	letter-spacing: 0.05em;
+	animation: fadein 1s forwards;
+	word-break: break-all;
+}
+
+@keyframes fadein {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 h1,h2 {
@@ -26,7 +33,9 @@ h2 {
 }
 
 .container {
-	max-width: 960px;
+	width: 960px;
+	max-width: 100%;
+	height: auto;
 	margin: 0 auto;
 	padding: 0 50px;
 }
@@ -210,6 +219,7 @@ nav li a:hover::after {
 
 .top_works_items a {
 	position: relative;
+	cursor: default;
 }
 
 /* works animetion */
@@ -303,6 +313,133 @@ footer p {
 	padding-top: 20px;
 }
 
+/* ---------- ABOUT PAGE ---------- */
+/* service */
+.about_service {
+	padding: 30px 0;
+}
+
+.about_service h2 {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.s_item img {
+	max-width: 250px;
+	min-width: 180px;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.s_item h3 {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 15px 0;
+}
+
+.s_items {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.s_lists {
+	padding: 10px 0 10px 20px;
+	list-style: inside;
+}
+
+/* skill */
+.about_skill {
+padding: 30px 0;
+overflow: hidden;
+}
+
+.about_skill h2 {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.skills_all {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.skills_list {
+	max-width: 400px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.skills {
+	position: relative;
+	overflow: hidden;
+	transition: .5s;
+	margin: 20px 0;
+}
+
+.index {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+.value90 {
+	padding-right: 10%;
+}
+
+.value80 {
+	padding-right: 20%;
+}
+
+.value70 {
+	padding-right: 30%;
+}
+
+.value60 {
+	padding-right: 40%;
+}
+
+.value50 {
+	padding-right: 50%;
+}
+
+.value40 {
+	padding-right: 60%;
+}
+
+.value30 {
+	padding-right: 70%;
+}
+
+.percent {
+	position: relative;
+	width: 100%;
+	height: 20px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: 1px solid #555;
+	overflow: hidden;
+}
+
+.progress {
+	position: absolute;
+	top: 0;
+	letter-spacing: 0;
+	height: 100%;
+	border-radius: 15px;
+	background: #ec8e7b;
+	animation: animate 5s ease-in-out forwards;
+}
+
+@keyframes animate {
+	from {
+		width: 0;
+	}
+}
+
+
 /* ---------- WORKS PAGE ---------- */
 .works_tab {
 	padding: 50px 0;
@@ -343,6 +480,10 @@ footer p {
 	max-width: 280px;
 	min-width: 130px;
 	padding: 20px 10px;
+}
+
+.works_items ul li a {
+	cursor: default;
 }
 
 .works_items.show {
