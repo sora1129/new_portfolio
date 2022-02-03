@@ -88,8 +88,12 @@ header {
 }
 
 /* skill */	
+.skills_all {
+	flex-direction: column;
+}
+
 .skills_list {
-	width: 220px;
+	max-width: 450px;
 }
 
 /* ---------- WORKS PAGE ---------- */
@@ -196,6 +200,17 @@ header {
 
 .sns_icons img,.sns_btn  {
 	margin: 5px;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+/* service */
+.s_items {
+	flex-direction: column;
+	text-align: center;
+}
+
+.s_lists {
+	padding: 10px 0;
 }
 
 /* ---------- WORKS PAGE ---------- */

@@ -339,6 +339,12 @@ footer p {
 	padding: 15px 0;
 }
 
+.s_items {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
 .s_lists {
 	padding: 10px 0 10px 20px;
 	list-style: inside;
@@ -353,6 +359,12 @@ overflow: hidden;
 .about_skill h2 {
 	text-align: center;
 	padding: 30px 0;
+}
+
+.skills_all {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
 }
 
 .skills_list {
