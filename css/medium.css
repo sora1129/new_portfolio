@@ -5,9 +5,10 @@
 	}
 
 	.container {
-		max-width: 600px;
+		width: 600px;
+		max-width: 100%;
 		margin: 0 auto;
-		padding: 0 20px;
+		padding: 0 10px;
 	}
 
 	/* btn hover */
@@ -55,6 +56,22 @@
 /* footer */
 .sns_btns {
 	padding-top: 13px;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+/* service */
+.s_item h3 {
+	font-size: 0.8rem;
+}
+
+.s_lists {
+	font-size: 0.7rem;
+}
+
+/* skill */	
+.skills_list {
+	max-width: 260px;
+	width: 100%;
 }
 
 /* ---------- WORKS PAGE ---------- */

@@ -9,7 +9,8 @@ body {
 }
 
 .container {
-	max-width: 480px;
+	width: 480px;
+	max-width: 100%;
 	padding: 0 10px;
 }
 
@@ -62,6 +63,35 @@ header {
 	display: none;
 }
 
+/* ---------- ABOUT PAGE ---------- */
+/* service */
+.s_items {
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.s_item {
+	padding: 10px;
+}
+
+.s_item img {
+	max-width: 200px;
+	min-width: 180px;
+}
+
+.s_item h3 {
+	font-size: 0.9rem;
+}
+
+.s_lists {
+	font-size: 0.8rem;
+}
+
+/* skill */	
+.skills_list {
+	width: 220px;
+}
+
 /* ---------- WORKS PAGE ---------- */
 .works_items ul li a img {
 	max-width: 220px;
@@ -91,6 +121,7 @@ header {
 
 	.container {
 		max-width: 310px;
+		width: 100%;
 		padding: 0 5px;
 	}
 
