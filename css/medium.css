@@ -28,11 +28,11 @@
 	font-size: 16px;
 }
 
-.top_imges {
+.top_images {
 	height: auto;
 }
 
-.top_imges img {
+.top_images img {
 	max-width: 320px;
 	min-width: 130px;
 	right: 50%;

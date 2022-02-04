@@ -66,7 +66,7 @@
 		}, 1100);
 	}
 	
-	const imagesTop = document.querySelectorAll('.top_imges img');
+	const imagesTop = document.querySelectorAll('.top_images img');
 	const imagesAbout = document.querySelectorAll('.top_about_img img');
 	let currentIndex = 0;
 	let streamIndex = 0;
@@ -122,5 +122,9 @@
 			document.getElementById(clickeditem.dataset.id).classList.add('show');
 		});
 	});
+
+	var app = new Vue({
+		el: '#app',
+	})
 
 }

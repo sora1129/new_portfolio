@@ -159,12 +159,12 @@ nav li a:hover::after {
 	font-size: 17px;
 }
 
-.top_imges {
+.top_images {
 	height: 450px;
 	position: relative;
 }
 
-.top_imges img {
+.top_images img {
 	max-width: 503px;
 	min-width: 130px;
 	position: absolute;
@@ -172,7 +172,7 @@ nav li a:hover::after {
 	opacity: 0;
 }
 
-.top_imges img.current {
+.top_images img.current {
 	opacity: 1;
 }
 
