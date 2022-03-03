@@ -1,5 +1,15 @@
 'use strict'
 
+import Vue from "vue";
+import App from "./App.vue";
+
+Vue.config.productionTip = false;
+
+new Vue({
+  render: (h) => h(App)
+}).$mount("#app");
+
+
 {
 	/*------- 
 	 ALL PAGE
@@ -122,9 +132,5 @@
 			document.getElementById(clickeditem.dataset.id).classList.add('show');
 		});
 	});
-
-	var app = new Vue({
-		el: '#app',
-	})
 
 }
