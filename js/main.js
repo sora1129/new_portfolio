@@ -103,10 +103,10 @@
 	 WORKS PAGE
 	---------*/
 	//---------- tab menu-------------//
-	const tabMenu = document.querySelectorAll('.tab_menu li a');
+	const tabMenu = document.querySelectorAll('.tab_menu li');
 	const items = document.querySelectorAll('.works_items');
 
-	tabMenu.forEach(clickeditem =>  {
+	tabMenu.forEach(clickeditem => {
 		clickeditem.addEventListener('click', e => {
 			e.preventDefault();
 
@@ -121,5 +121,33 @@
 			document.getElementById(clickeditem.dataset.id).classList.add('show');
 		});
 	});
+
+	// works page modal
+	//getting modal opening buttons
+	const modalBtns = document.querySelectorAll(".modal_open");
+
+	modalBtns.forEach(function(btn) {
+		btn.onclick = function() {
+			const modal = btn.getAttribute("data-modal");
+
+			document.getElementById(modal).style.display = "block";
+		};
+	});
+
+	// getting modal closing buttons
+	const closeBtns = document.querySelectorAll(".modal_close");
+	
+	closeBtns.forEach(function(btn) {
+		btn.onclick = function() {
+			const modal = (btn.closest(".modal").style.display = "none");
+		};
+	});
+
+	// getting modal closing mask(window)
+	window.onclick = function(e) {
+		if(e.target.className == "modal") {
+			e.target.style.display = "none";
+		}
+	};
 
 }

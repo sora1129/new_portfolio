@@ -14,8 +14,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="icon" href="images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+	<!-- ---------- header ---------- -->
 	<header>
 		<div class="header">
 			<div class="container">
@@ -35,232 +37,322 @@
 	<div class="works_tab">
 		<div class="container">
 			<ul class="tab_menu">
-				<li><a href="#" class="tab_on" data-id="all">All</a></li>
-				<li><a href="#" data-id="lp">lp</a></li>
-				<li><a href="#" data-id="hp">hp</a></li>
-				<li><a href="#" data-id="writing">writing</a></li>
+				<li class="tab_on" data-id="all">All</li>
+				<li data-id="lp">lp</li>
+				<li data-id="hp">hp</li>
+				<li data-id="writing">writing</li>
 			</ul>
 		</div>
 	</div>
 
+	<!-- works_wrap lists -->
 	<div class="works_wrap">
 		<div class="container">
+			<!-- tab all -->
 			<section class="works_items show" id="all">
-				<ul>
-					<li id="open"><a href="#"><img src="images/works_item01.png" alt="にのみやそらのポートフォリオHP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：2020年9月25日～11月4日</p>
-						<p>スキル：Photoshop,HTML,CSS,PHP</p>
-						<p>概要：建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォーム
-							のLP制作。</p>
-						<p>担当業務：構成作成,デザイン制作,コーディング,メールフォームテスト</p>
-						<p>ポイント：<br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
-					</div>
+				<!-- modal triggers -->
+				<ul class="work_lists">
+					<!-- modal1 -->
+					<li class="modal_open" data-modal="modal1"><img src="images/works_item01.png" alt="にのみやそらのポートフォリオHP制作"></li>
+					<!-- modal2 -->
+					<li class="modal_open" data-modal="modal2"><img src="images/works_item02.png" alt="オンライン子供音楽教室HP制作"></li>
+					<!-- modal3 -->
+					<li class="modal_open" data-modal="modal3"><img src="images/works_item03.png" alt="ヒーリングLP制作"></li>
+					<!-- modal4 -->
+					<li class="modal_open" data-modal="modal4"><img src="images/works_item04.png" alt="オンラインヒーリングLP制作"></li>
+					<!-- modal5 -->
+					<li class="modal_open" data-modal="modal5"><img src="images/works_item05.png" alt="セミナーLPリニューアル"></li>
+					<!-- modal6 -->
+					<li class="modal_open" data-modal="modal6"><img src="images/works_item06.png" alt="英語教材LP制作/商品登録用"></li>
+					<!-- modal7 -->
+					<li class="modal_open" data-modal="modal7"><img src="images/works_item07.png" alt="台風被害修繕LP制作"></li>
+					<!-- modal8 -->
+					<li class="modal_open" data-modal="modal8"><img src="images/works_item08.png" alt="無形商品LP制作"></li>
+					<!-- modal9 -->
+					<li class="modal_open" data-modal="modal9"><img src="images/works_item09.png" alt="セミナーLP制作"></li>
+					<!-- modal10 -->
+					<li class="modal_open" data-modal="modal10"><img src="images/works_item010.png" alt="セミナーLP制作"></li>
+					<!-- modal11 -->
+					<li class="modal_open" data-modal="modal11"><img src="images/works_item11.png" alt="セミナーLP制作"></li>
+					<!-- modal12 -->
+					<li class="modal_open" data-modal="modal12"><img src="images/works_item12.png" alt="Webライティング執筆記事"></li>
+				</ul>
+			</section>
 
-<!-- 					
-					<li><a href="#"><img src="images/works_item02.png" alt="オンライン子供音楽教室HP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item03.png" alt="ヒーリングLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item04.png" alt="オンラインヒーリングLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item05.png" alt="セミナーLPリニューアル"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item06.png" alt="英語教材LP制作/商品登録用"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item07.png" alt="台風被害修繕LP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item08.png" alt="無形商品LP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item09.png" alt="セミナーLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item10.png" alt="セミナーLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item11.png" alt="セミナーLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item12.png" alt="Webライティング執筆"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div> -->
-				</ul>
-			</section>
-		
+			<!-- tab lp -->
 			<section class="works_items" id="lp">
-				<ul>
-					<li><a href="#"><img src="images/works_item03.png" alt="ヒーリングLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item04.png" alt="オンラインヒーリングLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item05.png" alt="セミナーLPリニューアル"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item06.png" alt="英語教材LP制作/商品登録用"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item07.png" alt="台風被害修繕LP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item08.png" alt="無形商品LP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item09.png" alt="セミナーLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item10.png" alt="セミナーLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
-					<li><a href="#"><img src="images/works_item11.png" alt="セミナーLP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
+				<ul class="work_lists">
+					<!-- modal3 -->
+					<li class="modal_open" data-modal="modal3"><img src="images/works_item03.png" alt="ヒーリングLP制作"></li>
+					<!-- modal4 -->
+					<li class="modal_open" data-modal="modal4"><img src="images/works_item04.png" alt="オンラインヒーリングLP制作"></li>
+					<!-- modal5 -->
+					<li class="modal_open" data-modal="modal5"><img src="images/works_item05.png" alt="セミナーLPリニューアル"></li>
+					<!-- modal6 -->
+					<li class="modal_open" data-modal="modal6"><img src="images/works_item06.png" alt="英語教材LP制作/商品登録用"></li>
+					<!-- modal7 -->
+					<li class="modal_open" data-modal="modal7"><img src="images/works_item07.png" alt="台風被害修繕LP制作"></li>
+					<!-- modal8 -->
+					<li class="modal_open" data-modal="modal8"><img src="images/works_item08.png" alt="無形商品LP制作"></li>
+					<!-- modal9 -->
+					<li class="modal_open" data-modal="modal9"><img src="images/works_item09.png" alt="セミナーLP制作"></li>
+					<!-- modal10 -->
+					<li class="modal_open" data-modal="modal10"><img src="images/works_item010.png" alt="セミナーLP制作"></li>
+					<!-- modal11 -->
+					<li class="modal_open" data-modal="modal11"><img src="images/works_item11.png" alt="セミナーLP制作"></li>
 				</ul>
 			</section>
-		
+			
+			<!-- tab hp -->
 			<section class="works_items" id="hp">
-				<ul>
-					<li><a href="#"><img src="images/works_item01.png" alt="にのみやそらのポートフォリオHP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：2020年9月25日～11月4日</p>
-						<p>スキル：Photoshop,HTML,CSS,PHP</p>
-						<p>概要：建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォーム
-							のLP制作。</p>
-						<p>担当業務：構成作成,デザイン制作,コーディング,メールフォームテスト</p>
-						<p>ポイント：<br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
-					</div>
-					<li><a href="#"><img src="images/works_item02.png" alt="オンライン子供音楽教室HP制作"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
+				<ul class="work_lists">
+					<!-- modal1 -->
+					<li class="modal_open" data-modal="modal1"><img src="images/works_item01.png" alt="にのみやそらのポートフォリオHP制作"></li>
+					<!-- modal2 -->
+					<li class="modal_open" data-modal="modal2"><img src="images/works_item02.png" alt="オンライン子供音楽教室HP制作"></li>
 				</ul>
 			</section>
-		
+			
+			<!-- tab writing -->
 			<section class="works_items" id="writing">
-				<ul>
-					<li><a href="#"><img src="images/works_item12.png" alt="Webライティング執筆"></a></li>
-					<div class="modal">
-						<p>制作期間：</p>
-						<p>スキル：</p>
-						<p>概要：</p>
-						<p>担当業務：</p>
-						<p>ポイント：</p>
-					</div>
+				<ul class="work_lists">
+					<!-- modal12 -->
+					<li class="modal_open" data-modal="modal12"><img src="images/works_item12.png" alt="Webライティング執筆記事"></li>
 				</ul>
 			</section>
 		</div>
+	</div>
+
+	<!-- modal -->
+	<div class="modal_wrap">
+		<!-- modal1 -->
+		<div class="modal" id="modal1">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>My Portfolio</h3>
+					<div class="modal_img">
+						<img src="images/works_item01.png" alt="にのみやそらのポートフォリオHP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal2 -->
+		<div class="modal" id="modal2">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item02.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal3 -->
+		<div class="modal" id="modal3">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item03.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal4 -->
+		<div class="modal" id="modal4">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item04.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal5 -->
+		<div class="modal" id="modal5">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item05.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal6 -->
+		<div class="modal" id="modal6">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item06.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal7 -->
+		<div class="modal" id="modal7">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item07.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal8 -->
+		<div class="modal" id="modal8">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item08.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal9 -->
+		<div class="modal" id="modal9">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item09.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal10 -->
+		<div class="modal" id="modal10">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item010.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal11 -->
+		<div class="modal" id="modal11">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item11.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
+		<!-- modal12 -->
+		<div class="modal" id="modal12">
+			<div class="modal_content">
+				<div class="modal_header">
+					<button class="icon modal_close">×</button>
+					<h3>オンライン子供音楽教室HP制作</h3>
+					<div class="modal_img">
+						<img src="images/works_item12.png" alt="オンライン子供音楽教室HP制作">
+					</div>
+				</div>
+					<div class="modal_body">
+						<p><span>制作期間：</span>2020年9月25日～11月4日</p>
+						<p><span>スキル：</span>Photoshop,HTML,CSS,PHP</p>
+						<p><span>概要：</span>建物修繕工事業務を営む企業の、台風被害修繕専用お問い合わせフォームのLP制作。</p>
+						<p><span>担当業務：</span>構成作成,デザイン制作,コーディング,メールフォームテスト</p>
+						<p><span>ポイント：</span><br>・本番環境でのトラブル発生防止のため、念入りにメール送受信のテストを実施。<br>・改修を想定し、ソースコードを書き換えやすいように設計。<br>・運用当日から、お問い合わせのメールが届いたとの報告を受ける。</p>
+					</div>
+				</div>
+			</div>
 	</div>
 
 	<div class="contact" id="contact">
