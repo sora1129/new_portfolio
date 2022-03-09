@@ -81,4 +81,9 @@
 	padding: 20px 10px;
 }
 
+/* modal_content */
+.modal_content {
+	width: 80%;
+}
+
 }

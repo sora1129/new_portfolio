@@ -24,6 +24,10 @@ h1 {
 	padding: 20px 0;
 }
 
+h3 {
+	font-size: 0.9rem;
+}
+
 /* header */
 header {
 	height: 180px;
@@ -79,10 +83,6 @@ header {
 	min-width: 180px;
 }
 
-.s_item h3 {
-	font-size: 0.9rem;
-}
-
 .s_lists {
 	font-size: 0.8rem;
 }
@@ -101,6 +101,16 @@ header {
 	max-width: 220px;
 	min-width: 130px;
 	padding: 20px 10px;
+}
+
+.modal_img img {
+	max-width: 220px;
+	min-width: 130px;
+}
+
+/* modal_body */
+.modal_body {
+	width: 98%;
 }
 
 }
@@ -124,8 +134,8 @@ header {
 	}
 
 	.container {
-		max-width: 310px;
-		width: 100%;
+		width: 350px;
+		max-width: 100%;
 		padding: 0 5px;
 	}
 
@@ -176,15 +186,19 @@ header {
 }
 
 /* about */
+.top_about {
+	padding: 20px 0;
+}
+
 .top_about_img img {
 	max-width: 100px;
 	min-width: 80px;
-	right: calc(50% - 200px);
+	right: calc(50% - 220px);
 }
 
 .top_about_texts {
 	max-width: 460px;
-	padding-top: 120px;
+	padding-top: 150px;
 }
 
 /* footer */
@@ -230,6 +244,23 @@ header {
 .works_items ul li a img {
 	max-width: 145px;
 	padding: 10px 5px;
+}
+
+/* modal_content */
+.modal_content h3 {
+	padding: 30px 0 20px 0;	
+}
+
+/* modal_close */
+.modal_close{
+  width: 20px;
+  height: 20px;
+}
+
+.modal_close::before, .modal_close::after {
+  width: 2px;
+  height: 10px;
+  background: #fff;
 }
 
 }
